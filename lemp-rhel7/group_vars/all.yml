@@ -85,26 +85,22 @@ php_webserver_daemon: "nginx"
 php_error_reporting: "E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE & ~E_WARNING"
 
 php_packages:
-  - php
-  - php-cli
-  - php-common
-  - php-devel
-  - php-fpm
-  - php-gd
-  - php-imap
-  - php-ldap
-  - php-mbstring
-  - php-mcrypt
+  - php7.0-common
+  - php7.0-cli
+  - php7.0-dev
+  - php7.0-fpm
+  - libpcre3-dev
+  - php7.0-gd
+  - php7.0-curl
+  - php7.0-imap
+  - php7.0-json
+  - php7.0-opcache
+  - php7.0-xml
+  - php7.0-mbstring
+  - php-sqlite3
+  - php-apcu
   - php-memcached
-  - php-mysql
-  - php-opcache
-  - php-pdo
-  - php-pear
-  - php-pecl-apcu
-  - php-xml
   - php-twig
-  - php-xmlrpc
-  - php-pecl-uploadprogress
 
 # Drush
 drush_keep_updated: yes
